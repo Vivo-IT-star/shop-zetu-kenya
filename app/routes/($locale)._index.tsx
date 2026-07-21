@@ -231,62 +231,52 @@ async function loadCriticalData({context}: LoaderFunctionArgs) {
     return products;
   }
 
+  // Best Sellers — real Vivo Woman Uganda best-selling products
   const topDealsProductHandles = [
-    'keni-set-navy-blue ',
-    'vivo-basic-sleeveless-tent-maxi-dress-in-crepe-black-taupe-abstract',
-    'eunike-zuri-maxi-cargo-skirt-jungle-green',
-
-    'vivo-lindi-high-low-dress-black',
-    'home-of-calor-lulu-shirt-dress-burnt-orange',
-    'vivo-basic-double-layered-wrap-poncho-off-white ',
-    'jolly-fancy-wear-high-low-maxi-dresses-multi-color-1 ',
-    'vivo-diella-v-neck-jumpsuit-in-crepe-maroon', 
-    'lela-two-piece-set-burgundy-white ',
-    'vivo-pin-tuck-waist-pants-in-crepe-taupe',
-    'inroses-bloom-two-piece-set-brown-white  ',
-
-  
-    'kakiba-collections-rehema-maxi-dress-black-1',
-    'the-elara-tailored-double-button-blazer',
-    'lela-pant-set', 
-    'smash-element-asymmetric-monolith-set-savannah-green ', 
-    'izulu-tali-dress-blue ',
-    ' afriwia-twilight-dress-mustard',
-    'african-yuva-palazzo-pants-red',
-    'timyt-urban-wear-diva-stitch-hoodie-maroon',
-    'jacky-set-navy-blue ',
-
-    'lizola-carino-bodycon-dress-purple ',
-    'tophad-closet-trench-coat-black',
-    'white-with-pink-tribal-ladies-softshell-jacket-sleeveless ',
+    'vivo-basic-leggings-black-1',
+    'sienna-waterfall-black',
+    'vivo-upe-wide-leg-pants-black',
+    'vivo-dua-jacket-black',
+    'vivo-panelled-leisure-pants-black',
+    'vivo-rema-straight-leg-pants-navy-copy-1',
+    'vivo-basic-bodycon-black-black',
+    'vivo-basic-leggings-black',
+    'vivo-val-cap-sleeve-top-white',
+    'vivo-basic-straight-leg-pants-black',
+    'vivo-waridi-pencil-skirt-black',
+    'vivo-basic-leggings-navy-blue',
   ];
 
+  // On Sale — products from the Uganda New Sale collection
   const FlashSaleProductHandles = [
-    'afrodame-chunky-bangle-gold-4',
-    'lokali-dala-shift-dress-navy-blue',
-    'anzo-wear-2',
-    'hats-and-more-bold-elegance-brocade-and-matching-headpiece-dress-pink-print',
-    'jolly-fancy-wear-toda-dress-maroon-floral',
-    'kakiba-collecion-achieng-two-piece-green-black',
-    'lizola-della-midi-skirt-maroon',
-    'hessed-unisex-polo-t-shirts-white',
-    'gravio-fashions-weekend-hooded-jacket-black-white',
-    'silk-house-collection-katya-top-blue',
-    'salok-havilah-supa-dress-stripes',
-    'urban-tribe-bella-skirt-dark-gray',
-    'timyt-urban-wear-aura-hoodie-royal-blue',
-    'sama-essential-plain-vest-wide-leg-suit-set-1',
+    'vivo-dua-shirt-dusty-pink',
+    'safari-hawi-cargo-pants-black',
+    'vivo-hanabi-drop-shoulder-dress-grey-koto-print',
+    'vivo-basic-double-layered-wrap-poncho-dark-gree',
+    'vivo-dua-shirt-hunters-green',
+    'vivo-sani-long-sleeve-v-neck-ruffle-top-dark-taupe',
+    'vivo-dali-panel-wide-leg-pants-black-1',
+    'vivo-basic-satin-bishop-sleeved-top-peach-black-print',
+    'vivo-zawadi-shift-dress-pink-print',
+    'safari-lira-front-panelled-shirt-dress-orange',
+    'vivo-basic-palazzo-pants-hunters-green',
+    'vivo-ziwa-long-sleeve-ruffle-kimono-mustard-off-white-zuri-abstract-print',
   ];
 
+  // JUST IN — newest Vivo Woman Uganda arrivals (most recently created)
   const NewInProductHandles = [
-    'flen-store-sports-bra-straight-leg-leggings-set-navy',
-    'mnubistyle-amari-dress-black',
-    'flen-store-sports-bra-straight-leg-leggings-set-purple',
-    'izulu-roho-dress-cwhite',
-    'lizola-avah-bodycon-dress-maroon',
-    'plainchic-off-shoulder-satin-mini-dress-green-pink'
-  
-   
+    'safari-naledi-wrap-top-in-cotton-olive',
+    'safari-naledi-wrap-top-in-cotton-white',
+    'vivo-sierra-maxi-dress-in-chiffon-light-green-hunters-arah-print',
+    'safari-naledi-wrap-top-purple-copy',
+    'vivo-ruched-maxi-top-in-textured-satin-dark-red',
+    'vivo-wide-leg-pants-in-textured-satin-dark-red',
+    'vivo-diella-v-neck-jumpsuit-in-crepe-dark-green',
+    'safari-by-vivo-short-trench-coat-in-kitenge-taiyo-print',
+    'safari-by-vivo-short-trench-coat-in-kitenge-kota-print',
+    'safari-by-vivo-short-trench-coat-in-kitenge-lili-print',
+    'safari-by-vivo-samira-maxi-dress-in-cotton-lilac',
+    'vivo-dolman-sweater-in-rib-maroon',
   ];
 
   const spotlightProductHandles = [
@@ -470,27 +460,16 @@ export default function Homepage() {
   //   )
   //   .filter(Boolean);
 
-  const spotlightCollectionHandles = [
-   
-    'stylish-sisters',
-    'plain-chic',
-    'gravio-fashions',
-    'bohten',
-    'african-yuva',
-    'anel-s-knitwear',
-    'elan-cocoafrike',
-    'glamour-queen',
-    'house-of-thea',
-    'izulu',
-    'vivo',
-    'magali-designs',
-    'merli-africa',
-    'rafiki-threads',
-    'zoya-1',
-    'smash-by-kaly',
-    'safari-by-vivo',
-    'vazi-afriq',
-  ];
+  // Partner brands — Vivo Woman Uganda's own brand collections
+  const spotlightCollectionHandles = ['vivo', 'safari', 'zoya'];
+
+  // These brand collections have no collection image, so fall back to the
+  // first product image in the collection for the tile.
+  const firstProductImage = (collection: any) => {
+    const nodes = collection?.products?.nodes || [];
+    const withImg = nodes.find((n: any) => n?.featuredImage);
+    return withImg?.featuredImage;
+  };
 
   const slidingSpotlightCollections = spotlightCollectionHandles
     .map((handle) =>
@@ -499,13 +478,14 @@ export default function Homepage() {
     .filter(Boolean)
     .map((collection: any) => ({
       ...collection,
-      image: collection.image ?? {
-        id: '',
-        url: '',
-        altText: '',
-        width: 0,
-        height: 0,
-      }, // Provide a fallback image object if missing
+      image: collection.image ??
+        firstProductImage(collection) ?? {
+          id: '',
+          url: '',
+          altText: '',
+          width: 0,
+          height: 0,
+        }, // Provide a fallback image object if missing
     }));
 
   const topCategoryHandles = [
@@ -1066,16 +1046,19 @@ const XMASS_COLLECTIONS_BY_HANDLE_QUERY = `#graphql
     $country: CountryCode
     $language: LanguageCode
   ) @inContext(country: $country, language: $language) {
-    dresses: collection(handle: "pb-sweaters-ponchos") {
+    dresses: collection(handle: "dresses") {
       ...FeaturedCollection
     }
-    tops: collection(handle: "pb-lounge-wear") {
+    tops: collection(handle: "tops") {
       ...FeaturedCollection
     }
-    loungewear: collection(handle: "pb-jackets-coats") {
+    bottoms: collection(handle: "bottoms") {
       ...FeaturedCollection
     }
-    accessories: collection(handle: "knitwear-collection") {
+    skirts: collection(handle: "skirts") {
+      ...FeaturedCollection
+    }
+    outerwear: collection(handle: "outerwear") {
       ...FeaturedCollection
     }
   }
@@ -1126,45 +1109,31 @@ const NEWIN_COLLECTIONS_BY_HANDLE_QUERY = `#graphql
       width
       height
     }
+    products(first: 6) {
+      nodes {
+        featuredImage {
+          id
+          url
+          altText
+          width
+          height
+        }
+      }
+    }
   }
 
   query CollectionsByHandles(
     $country: CountryCode
     $language: LanguageCode
   ) @inContext(country: $country, language: $language) {
-    leatheraura: collection(handle: "leather-aura") {
+    vivo: collection(handle: "vivo") {
       ...FeaturedCollection
     }
-    plainchic: collection(handle: "plain-chic") {
+    safaribyvivo: collection(handle: "safari") {
       ...FeaturedCollection
     }
-    stylishsisters: collection(handle: "stylish-sisters") {
+    zoya: collection(handle: "zoya") {
       ...FeaturedCollection
     }
-    graviofashions: collection(handle: "gravio-fashions") {
-      ...FeaturedCollection
-    }
-    bohten: collection(handle: "bohten") {
-      ...FeaturedCollection
-    }
-    africanyuva: collection(handle: "african-yuva") {
-      ...FeaturedCollection
-    }
-    izulu: collection(handle: "izulu") {
-      ...FeaturedCollection
-    }
-    vaziafriq: collection(handle: "vazi-afriq") {
-      ...FeaturedCollection
-    }
-    vivo: collection(handle: "Vivo") {
-      ...FeaturedCollection
-    }
-    safaribyvivo: collection(handle: "safari-by-vivo") {
-      ...FeaturedCollection
-    }
-    zoya1: collection(handle: "zoya-1") {
-      ...FeaturedCollection
-    }
-    
   }
 ` as const;
