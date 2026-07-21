@@ -1,0 +1,44 @@
+:root {
+  /* === Brand Colors === */
+  --chat--color-primary: #000000; /* toggle button + accents */
+  --chat--color-primary-shade-50: #222222;
+  --chat--color-primary-shade-100: #333333;
+
+  --chat--color-secondary: #a3e635; /* lime user bubbles */
+  --chat--color-secondary-shade-50: #84cc16;
+  --chat--color-white: #ffffff;
+  --chat--color-dark: #000000;
+
+
+  /* === Window Size === */
+  --chat--window--width: 400px;
+  --chat--window--height: 800px;
+
+  /* === Chat Header === */
+  --chat--header--background: #000000;  /* black header */
+  --chat--header--color: #a3e635;       /* lime header text */
+  --chat--heading--font-size: 1rem;
+  --chat--subtitle--font-size: 1rem;
+
+  /* === Chat Messages === */
+  --chat--message--bot--background: #f9fafb; /* bot bubble (light gray) */
+  --chat--message--bot--color: #111827;      /* bot text (near-black) */
+  --chat--message--user--background: #a3e635; /* user bubble (lime) */
+  --chat--message--user--color: #000000;      /* user text (black) */
+  --chat--message--border-radius: 1rem;       /* rounded bubbles */
+
+  /* === Toggle Button === */
+  --chat--toggle--background: #000000;   /* black */
+  --chat--toggle--hover--background: #222222;
+  --chat--toggle--active--background: #333333;
+  --chat--toggle--color: #a3e635;       /* lime icon */
+  --chat--toggle--size: 56px;           /* large floating button */
+
+  /* === Other Styling === */
+  --chat--textarea--height: 52px;
+  --chat--message--font-size: 0.95rem;
+  --chat--border-radius: 0.75rem;
+
+  
+}
+

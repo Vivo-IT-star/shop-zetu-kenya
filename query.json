@@ -1,0 +1,79 @@
+{
+  "name": "Shopify Product Search Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "functionCode": "// input: $json.product (user search string)\n\nconst original = ($json.product || '').trim();\nif (!original) {\n  return [{ json: { error: 'empty search' } }];\n}\n\n// sanitize\nconst cleaned = original.replace(/[\\\"']/g, '').replace(/[^\\w\\s-]/g, ' ').replace(/\\s+/g, ' ').trim();\nconst tokens = cleaned.split(/\\s+/).filter(Boolean);\n\n// build titleQuery requiring each token in title\nconst titleQuery = tokens.map(t => `title:${t}`).join(' ');\n\n// exact phrase\nconst phraseQuery = `\\\"${cleaned}\\\"`;\n\n// generate candidate vendor n-grams (longest-first)\nconst vendorCandidates = [];\nfor (let len = tokens.length; len >= 1; len--) {\n  for (let i = 0; i + len <= tokens.length; i++) {\n    vendorCandidates.push(tokens.slice(i, i + len).join(' '));\n  }\n}\n\nreturn [{ json: { original, cleaned, tokens, titleQuery, phraseQuery, vendorCandidates } }];"
+      },
+      "name": "Prepare Search Query",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [200, 400]
+    },
+    {
+      "parameters": {
+        "operation": "graphql",
+        "endpoint": "https://your-shopify-store.myshopify.com/api/2023-10/graphql.json",
+        "query": "query ProductsByTitle($query: String!) {\n  products(first: 10, query: $query) {\n    edges {\n      node {\n        id\n        title\n        handle\n        vendor\n        variantsCount { count }\n        options(first: 20) { name values }\n        onlineStoreUrl\n        featuredImage { url altText width height }\n        variants(first: 20) {\n          edges {\n            node {\n              id\n              title\n              availableForSale\n              price { amount currencyCode }\n              compareAtPrice { amount currencyCode }\n            }\n          }\n        }\n      }\n    }\n  }\n}",
+        "variables": "={ \"query\": $json.vendorCandidates[0] ? `vendor:${$json.vendorCandidates[0]} ${$json.titleQuery}` : $json.titleQuery }",
+        "authentication": "headerAuth"
+      },
+      "name": "Fetch Products (Vendor+Title)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [600, 200],
+      "credentials": {
+        "httpHeaderAuth": "Shopify Storefront API"
+      }
+    },
+    {
+      "parameters": {
+        "operation": "graphql",
+        "endpoint": "https://your-shopify-store.myshopify.com/api/2023-10/graphql.json",
+        "query": "query ProductsByPhrase($query: String!) {\n  products(first: 10, query: $query) {\n    edges {\n      node {\n        id\n        title\n        handle\n        vendor\n        variantsCount { count }\n        options(first: 20) { name values }\n        onlineStoreUrl\n        featuredImage { url altText width height }\n        variants(first: 20) {\n          edges {\n            node {\n              id\n              title\n              availableForSale\n              price { amount currencyCode }\n              compareAtPrice { amount currencyCode }\n            }\n          }\n        }\n      }\n    }\n  }\n}",
+        "variables": "={ \"query\": $json.phraseQuery }",
+        "authentication": "headerAuth"
+      },
+      "name": "Fallback PhraseQuery",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [600, 600],
+      "credentials": {
+        "httpHeaderAuth": "Shopify Storefront API"
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "const results = [];\n\nfor (const item of $input.all()) {\n  const edges = item.json?.data?.products?.edges || [];\n  for (const edge of edges) {\n    results.push({ json: edge.node });\n  }\n}\n\nreturn results;"
+      },
+      "name": "Flatten Products",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 2,
+      "position": [1000, 400]
+    }
+  ],
+  "connections": {
+    "Prepare Search Query": {
+      "main": [
+        [
+          { "node": "Fetch Products (Vendor+Title)", "type": "main", "index": 0 },
+          { "node": "Fallback PhraseQuery", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Fetch Products (Vendor+Title)": {
+      "main": [
+        [
+          { "node": "Flatten Products", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Fallback PhraseQuery": {
+      "main": [
+        [
+          { "node": "Flatten Products", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  }
+}
