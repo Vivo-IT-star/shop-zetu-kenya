@@ -20,6 +20,7 @@ import {
 
 import favicon from '~/assets/favicon.svg';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
+import {SHOPZETU_HEADER_MENU} from '~/lib/shopzetuMenu';
 import resetStyles from '~/styles/reset.css?url';
 import appStyles from '~/styles/app.css?url';
 import tailwindCss from './styles/tailwind.css?url';
@@ -166,6 +167,12 @@ async function loadCriticalData({context}: LoaderFunctionArgs) {
     }),
     // Add other queries here, so that they are loaded in parallel
   ]);
+
+  // Preview override: render Shopzetu's captured navigation for the header,
+  // independent of this store's own admin menus. Live store is unaffected.
+  if (header) {
+    (header as any).menu = SHOPZETU_HEADER_MENU;
+  }
 
   return {header};
 }
