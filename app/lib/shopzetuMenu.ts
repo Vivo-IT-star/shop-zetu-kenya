@@ -1,8 +1,9 @@
-// AUTO-GENERATED — Shopzetu navigation captured from the shop-zetu-kenya
-// Storefront API (handles: main-menu-dup for header, footer for footer).
-// URLs normalized to relative paths so the Hydrogen preview renders Shopzetu's
-// menu (and its per-category layouts) without depending on the Uganda store's
-// own admin menus. Live store is unaffected.
+// AUTO-GENERATED — Shopzetu navigation (handles: main-menu-dup, footer) captured
+// from the shop-zetu-kenya Storefront API, with clickable leaf links remapped to
+// Vivo Woman Uganda's real collections where a match exists. Section URLs are kept
+// as-is to preserve the header's per-category mega-menu layouts. Unmatched items
+// (Men, Kids, Footwear, Beauty, etc.) retain Shopzetu paths and may 404. Live store
+// is unaffected.
 
 export const SHOPZETU_HEADER_MENU: any = {
   "id": "gid://shopify/Menu/246628843739",
@@ -29,7 +30,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Vivo",
               "type": "HTTP",
-              "url": "/shop/vivo",
+              "url": "/collections/vivo",
               "items": []
             },
             {
@@ -38,7 +39,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Safari By Vivo",
               "type": "COLLECTION",
-              "url": "/collections/safari-by-vivo",
+              "url": "/collections/safari",
               "items": []
             },
             {
@@ -101,7 +102,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Zoya",
               "type": "COLLECTION",
-              "url": "/collections/zoya-1",
+              "url": "/collections/zoya",
               "items": []
             },
             {
@@ -556,7 +557,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Clothing",
               "type": "COLLECTION",
-              "url": "/collections/new-arrival-clothing",
+              "url": "/collections/clothing",
               "items": []
             },
             {
@@ -593,7 +594,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Vivo",
               "type": "HTTP",
-              "url": "/shop/vivo",
+              "url": "/collections/vivo",
               "items": []
             },
             {
@@ -624,7 +625,7 @@ export const SHOPZETU_HEADER_MENU: any = {
       "tags": [],
       "title": "WOMEN",
       "type": "COLLECTION",
-      "url": "/collections/women",
+      "url": "/collections/clothing",
       "items": [
         {
           "id": "gid://shopify/MenuItem/590558068955",
@@ -640,7 +641,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Bodycons",
               "type": "COLLECTION",
-              "url": "/collections/bodycons",
+              "url": "/collections/dresses",
               "items": []
             },
             {
@@ -649,7 +650,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Corset Dresses",
               "type": "COLLECTION",
-              "url": "/collections/corset-dresses",
+              "url": "/collections/dresses",
               "items": []
             },
             {
@@ -658,7 +659,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Knee Length Dresses",
               "type": "COLLECTION",
-              "url": "/collections/knee-length-dress",
+              "url": "/collections/dresses",
               "items": []
             },
             {
@@ -667,7 +668,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Midi & Capri Dresses",
               "type": "COLLECTION",
-              "url": "/collections/midi-capri-dresses",
+              "url": "/collections/dresses",
               "items": []
             },
             {
@@ -685,7 +686,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Shirt Dresses",
               "type": "COLLECTION",
-              "url": "/collections/shirt-dresses",
+              "url": "/collections/dresses",
               "items": []
             },
             {
@@ -694,7 +695,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Short & Mini Dresses",
               "type": "COLLECTION",
-              "url": "/collections/party-fits-1",
+              "url": "/collections/short-dresses",
               "items": []
             }
           ]
@@ -713,7 +714,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Hoodies & Sweatshirts",
               "type": "COLLECTION",
-              "url": "/collections/hoodies-sweatshirts",
+              "url": "/collections/outerwear",
               "items": []
             },
             {
@@ -722,7 +723,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Jackets & Coats",
               "type": "COLLECTION",
-              "url": "/collections/jackets-coats",
+              "url": "/collections/outerwear",
               "items": []
             },
             {
@@ -731,7 +732,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Kimono Sets",
               "type": "COLLECTION",
-              "url": "/collections/kimono-sets",
+              "url": "/collections/outerwear",
               "items": []
             },
             {
@@ -740,7 +741,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Sweaters & Ponchos",
               "type": "COLLECTION",
-              "url": "/collections/sweaters-ponchos",
+              "url": "/collections/outerwear",
               "items": []
             },
             {
@@ -749,7 +750,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Waterfalls & Kimonos",
               "type": "COLLECTION",
-              "url": "/collections/waterfalls-kimonos",
+              "url": "/collections/outerwear",
               "items": []
             }
           ]
@@ -768,7 +769,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Beachwear",
               "type": "COLLECTION",
-              "url": "/collections/beach-please-collection-1",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -777,7 +778,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Bodysuits",
               "type": "COLLECTION",
-              "url": "/collections/bodysuits-1",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -786,7 +787,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Corset Tops",
               "type": "COLLECTION",
-              "url": "/collections/corset-tops",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -795,7 +796,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Crop Shirts",
               "type": "COLLECTION",
-              "url": "/collections/crop-shirts",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -804,7 +805,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Fitted Tops",
               "type": "COLLECTION",
-              "url": "/collections/fitted-tops",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -813,7 +814,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Midriff & Crop Tops",
               "type": "COLLECTION",
-              "url": "/collections/crop-tops",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -822,7 +823,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Loose Tops",
               "type": "COLLECTION",
-              "url": "/collections/loose-tops",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -831,7 +832,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": " Shirt Tops",
               "type": "COLLECTION",
-              "url": "/collections/shirt-tops",
+              "url": "/collections/tops",
               "items": []
             },
             {
@@ -840,7 +841,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "T-shirts & Tank Tops",
               "type": "COLLECTION",
-              "url": "/collections/t-shirts-tank-tops",
+              "url": "/collections/tops",
               "items": []
             }
           ]
@@ -859,7 +860,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Culottes & Capri Pants",
               "type": "COLLECTION",
-              "url": "/collections/cullottes-capri-pants",
+              "url": "/collections/culottes",
               "items": []
             },
             {
@@ -868,7 +869,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Denim Bottoms",
               "type": "COLLECTION",
-              "url": "/collections/womens-denim-bottoms",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -886,7 +887,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Jumpsuits & Playsuits",
               "type": "COLLECTION",
-              "url": "/collections/jumpsuits-playsuits",
+              "url": "/collections/jumpsuits",
               "items": []
             },
             {
@@ -895,7 +896,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Leggings",
               "type": "COLLECTION",
-              "url": "/collections/leggings",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -904,7 +905,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Loungewear",
               "type": "COLLECTION",
-              "url": "/collections/loungewear",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -913,7 +914,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Midi & Capri Pants",
               "type": "COLLECTION",
-              "url": "/collections/midi-capri-pants",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -922,7 +923,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Pant Sets",
               "type": "COLLECTION",
-              "url": "/collections/pant-sets",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -931,7 +932,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Short Sets",
               "type": "COLLECTION",
-              "url": "/collections/short-sets",
+              "url": "/collections/bottoms",
               "items": []
             },
             {
@@ -940,7 +941,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Shorts & Skorts",
               "type": "COLLECTION",
-              "url": "/collections/shorts-1",
+              "url": "/collections/shorts",
               "items": []
             }
           ]
@@ -959,7 +960,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Denim Skirts",
               "type": "COLLECTION",
-              "url": "/collections/denin-skirts",
+              "url": "/collections/skirts",
               "items": []
             },
             {
@@ -968,7 +969,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Knee Length Skirts",
               "type": "COLLECTION",
-              "url": "/collections/knee-length-skirts-1",
+              "url": "/collections/skirts",
               "items": []
             },
             {
@@ -977,7 +978,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Midi & Capri Skirts",
               "type": "COLLECTION",
-              "url": "/collections/midi-capri-skirts",
+              "url": "/collections/skirts",
               "items": []
             },
             {
@@ -986,7 +987,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Mini Skirts",
               "type": "COLLECTION",
-              "url": "/collections/mini-skirts",
+              "url": "/collections/skirts",
               "items": []
             },
             {
@@ -995,7 +996,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Maxi Skirts",
               "type": "COLLECTION",
-              "url": "/collections/full-length-skirts-1",
+              "url": "/collections/skirts",
               "items": []
             },
             {
@@ -1004,7 +1005,7 @@ export const SHOPZETU_HEADER_MENU: any = {
               "tags": [],
               "title": "Skirt Suits",
               "type": "COLLECTION",
-              "url": "/collections/skirt-suits",
+              "url": "/collections/skirts",
               "items": []
             }
           ]
@@ -1289,7 +1290,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Activewear Shorts ",
           "type": "COLLECTION",
-          "url": "/collections/activewear-shorts",
+          "url": "/collections/shorts",
           "items": []
         },
         {
@@ -1529,7 +1530,7 @@ export const SHOPZETU_HEADER_MENU: any = {
       "tags": [],
       "title": "SALE",
       "type": "COLLECTION",
-      "url": "/collections/sale",
+      "url": "/collections/uganda-new-sale",
       "items": [
         {
           "id": "gid://shopify/MenuItem/590561312987",
@@ -2102,7 +2103,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Vivo",
           "type": "HTTP",
-          "url": "/shop/vivo",
+          "url": "/collections/vivo",
           "items": []
         },
         {
