@@ -263,20 +263,14 @@ async function loadCriticalData({context}: LoaderFunctionArgs) {
     'vivo-ziwa-long-sleeve-ruffle-kimono-mustard-off-white-zuri-abstract-print',
   ];
 
-  // JUST IN — newest Vivo Woman Uganda arrivals (most recently created)
+  // JUST IN — newest Vivo Woman Uganda arrivals (one row = 6 on desktop)
   const NewInProductHandles = [
     'safari-naledi-wrap-top-in-cotton-olive',
-    'safari-naledi-wrap-top-in-cotton-white',
     'vivo-sierra-maxi-dress-in-chiffon-light-green-hunters-arah-print',
-    'safari-naledi-wrap-top-purple-copy',
     'vivo-ruched-maxi-top-in-textured-satin-dark-red',
-    'vivo-wide-leg-pants-in-textured-satin-dark-red',
     'vivo-diella-v-neck-jumpsuit-in-crepe-dark-green',
     'safari-by-vivo-short-trench-coat-in-kitenge-taiyo-print',
-    'safari-by-vivo-short-trench-coat-in-kitenge-kota-print',
-    'safari-by-vivo-short-trench-coat-in-kitenge-lili-print',
     'safari-by-vivo-samira-maxi-dress-in-cotton-lilac',
-    'vivo-dolman-sweater-in-rib-maroon',
   ];
 
   const spotlightProductHandles = [
@@ -865,7 +859,7 @@ function FeaturedCollection({
               data={image}
               sizes="(min-width: 45em) 300px, 100vw"
               loading="eager"
-              className="w-full h-[200px] sm:h-[300px] lg:h-[400px] transform duration-700 hover:scale-110 object-cover"
+              className="w-full h-[160px] sm:h-[230px] lg:h-[300px] transform duration-700 hover:scale-110 object-cover"
             />
 
             {/* Overlay Button */}
@@ -929,7 +923,7 @@ function ValentinesFeaturedCollection({
               data={image}
               sizes="(min-width: 45em) 300px, 100vw"
               loading="eager"
-              className="w-full h-[200px] sm:h-[300px] lg:h-[400px] transform duration-700 hover:scale-110 object-cover"
+              className="w-full h-[160px] sm:h-[230px] lg:h-[300px] transform duration-700 hover:scale-110 object-cover"
             />
 
             {/* Overlay Button */}
@@ -1056,9 +1050,6 @@ const XMASS_COLLECTIONS_BY_HANDLE_QUERY = `#graphql
       ...FeaturedCollection
     }
     skirts: collection(handle: "skirts") {
-      ...FeaturedCollection
-    }
-    outerwear: collection(handle: "outerwear") {
       ...FeaturedCollection
     }
   }

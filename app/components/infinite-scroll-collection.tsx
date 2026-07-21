@@ -106,11 +106,11 @@ export const InfiniteScrollingCollections = ({
                   <div className="relative group overflow-hidden">
                     {/* Image with hover zoom */}
         
-                    <Image 
+                    <Image
                       data={collection.image}
                       alt={collection.image.altText || collection.title}
-                      className="lg:max-h-[350px] max-h-[300px] lg:w-full object-cover transform transition-transform duration-800 group-hover:scale-108"
-                      sizes="(min-width: 1024px) 25vw, 50vw"
+                      className="h-[280px] w-[210px] lg:h-[340px] lg:w-[260px] object-cover transform transition-transform duration-800 group-hover:scale-108"
+                      sizes="(min-width: 1024px) 260px, 210px"
                       loading="eager"
                     />
 
