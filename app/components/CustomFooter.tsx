@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                     <ul className="space-y-3 text-sm text-gray-300">
                         <li className="hover:text-white cursor-pointer">Email</li>
                         <li className="text-lime-500  cursor-pointer">
-                            support@shopzetu.com
+                            customercare@vivofashiongroup.com
                         </li>
                         <li className="hover:text-white cursor-pointer">Phone</li>
                         <li className="text-lime-500  cursor-pointer">

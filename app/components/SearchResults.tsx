@@ -5,12 +5,8 @@ import {urlWithTrackingParams, type RegularSearchReturn} from '~/lib/search';
 import {JSX} from 'react/jsx-runtime';
 
 const PRODUCT_REDIRECTS: Record<string, string> = {
-  'gift-card-for-him':
-    'https://pay.shopzetu.com/products/gift-card-for-him?variant=44285866082523',
-  'gift-card-for-her':
-    'https://pay.shopzetu.com/products/gift-card-for-her?variant=44285865558235',
-  'congratulatory-gift-card':
-    'https://pay.shopzetu.com/products/congratulatory-gift-card?variant=44285868114139',
+  'vivo-gift-voucher':
+    'https://vivofashiongroup-ug.com/products/vivo-gift-voucher',
 };
 
 type SearchItems = RegularSearchReturn['result']['items'];

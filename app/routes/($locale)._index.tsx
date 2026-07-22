@@ -602,7 +602,7 @@ export default function Homepage() {
       /> */}
 
       <div className="mt-12">
-        <Link to={'/collections/zetu-gift-cards'}>
+        <Link to={'/products/vivo-gift-voucher'}>
           {/* Desktop Strip Banner Image */}
           <Image
             src="https://cdn.shopify.com/s/files/1/0621/5162/2875/files/Hero_Banner_Web_copy_2_3e36282d-6d46-4966-b41c-251c49bcb9d2.jpg?v=1712125324"
@@ -674,7 +674,7 @@ export default function Homepage() {
       </div> */}
 
       {/* <div className="mt-8">
-        <NavLink to="/collections/zetu-gift-cards">
+        <NavLink to="/products/vivo-gift-voucher">
           <img
             src="https://cdn.shopify.com/s/files/1/0621/5162/2875/files/Hero_Banner_Web_copy_2_3e36282d-6d46-4966-b41c-251c49bcb9d2.jpg?v=1712125324"
             alt="gift_cards_banner"
