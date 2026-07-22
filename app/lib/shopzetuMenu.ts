@@ -920,42 +920,42 @@ export const SHOPZETU_HEADER_MENU: any = {
       "tags": [],
       "title": "BUDGET FRIENDLY ",
       "type": "COLLECTION",
-      "url": "/collections/undertwo",
+      "url": "/collections/clothing",
       "items": [
         {
           "id": "gid://shopify/MenuItem/590561607899",
           "resourceId": "gid://shopify/Collection/453112234203",
           "tags": [],
-          "title": "Under 1600",
+          "title": "Under UGX 50K",
           "type": "COLLECTION",
-          "url": "/collections/under-1601",
+          "url": "/collections/clothing?price=Under%20UGX%2050K&sort=price-asc",
           "items": []
         },
         {
           "id": "gid://shopify/MenuItem/590561640667",
           "resourceId": "gid://shopify/Collection/424889614555",
           "tags": [],
-          "title": "Under 2k",
+          "title": "Under UGX 100K",
           "type": "COLLECTION",
-          "url": "/collections/under-2k",
+          "url": "/collections/clothing?price=Under%20UGX%20100K&sort=price-asc",
           "items": []
         },
         {
           "id": "gid://shopify/MenuItem/590561673435",
           "resourceId": "gid://shopify/Collection/424889680091",
           "tags": [],
-          "title": "Under 3k",
+          "title": "Under UGX 150K",
           "type": "COLLECTION",
-          "url": "/collections/under-3k",
+          "url": "/collections/clothing?price=Under%20UGX%20150K&sort=price-asc",
           "items": []
         },
         {
           "id": "gid://shopify/MenuItem/590561706203",
           "resourceId": "gid://shopify/Collection/445338681563",
           "tags": [],
-          "title": "Under 4k",
+          "title": "Under UGX 200K",
           "type": "COLLECTION",
-          "url": "/collections/under-4k",
+          "url": "/collections/clothing?price=Under%20UGX%20200K&sort=price-asc",
           "items": []
         }
       ]

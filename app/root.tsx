@@ -463,7 +463,8 @@ export default function App() {
   return (
     <>
       {/* <NavigationFix /> */}
-      <ChatWidget />
+      {/* ChatWidget hidden — it called Shopzetu's automation backend, not a Vivo endpoint. */}
+      {/* <ChatWidget /> */}
       {/* <WhatsAppBlackNovemberChannelPopup
         isOpen={isOpen}
         onClose={closePopup}

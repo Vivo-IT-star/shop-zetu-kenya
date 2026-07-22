@@ -326,11 +326,11 @@ export default function Collection() {
   const discountRanges = ['0-10%', '11-20%', '21-30%', '31-50%', '50%+'];
 
   const priceRanges = [
-    {label: 'KES 0 - 1000', min: 0, max: 1000},
-    {label: 'KES 1001 - 2000', min: 1001, max: 2000},
-    {label: 'KES 2001 - 4000', min: 2001, max: 4000},
-    {label: 'KES 4001 - 5000', min: 4001, max: 5000},
-    {label: 'KES 6000+', min: 6000, max: Infinity},
+    {label: 'Under UGX 50K', min: 0, max: 50000},
+    {label: 'Under UGX 100K', min: 0, max: 100000},
+    {label: 'Under UGX 150K', min: 0, max: 150000},
+    {label: 'Under UGX 200K', min: 0, max: 200000},
+    {label: 'UGX 200K+', min: 200000, max: Infinity},
   ];
 
   // Filter states
