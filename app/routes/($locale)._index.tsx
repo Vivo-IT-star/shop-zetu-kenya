@@ -764,6 +764,7 @@ export default function Homepage() {
 
       {/* <FeaturedReviews /> */}
 
+      {/* Blogs section removed — not enough blog posts to display.
       <div className="mx-4 md:mx-64">
         <div className="text-3xl text-center text-black font-bold my-8">
           Blogs
@@ -805,6 +806,7 @@ export default function Homepage() {
           View All Blogs
         </NavLink>
       </div>
+      */}
 
       <Footer />
 
