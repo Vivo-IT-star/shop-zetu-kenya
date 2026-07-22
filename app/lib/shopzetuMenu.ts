@@ -920,7 +920,7 @@ export const SHOPZETU_HEADER_MENU: any = {
       "tags": [],
       "title": "BUDGET FRIENDLY ",
       "type": "COLLECTION",
-      "url": "/collections/clothing",
+      "url": "/collections/under-ugx-200k?sort=price-asc",
       "items": [
         {
           "id": "gid://shopify/MenuItem/590561607899",
@@ -928,7 +928,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Under UGX 50K",
           "type": "COLLECTION",
-          "url": "/collections/clothing?price=Under%20UGX%2050K&sort=price-asc",
+          "url": "/collections/under-ugx-50k?sort=price-asc",
           "items": []
         },
         {
@@ -937,7 +937,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Under UGX 100K",
           "type": "COLLECTION",
-          "url": "/collections/clothing?price=Under%20UGX%20100K&sort=price-asc",
+          "url": "/collections/under-ugx-100k?sort=price-asc",
           "items": []
         },
         {
@@ -946,7 +946,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Under UGX 150K",
           "type": "COLLECTION",
-          "url": "/collections/clothing?price=Under%20UGX%20150K&sort=price-asc",
+          "url": "/collections/under-ugx-150k?sort=price-asc",
           "items": []
         },
         {
@@ -955,7 +955,7 @@ export const SHOPZETU_HEADER_MENU: any = {
           "tags": [],
           "title": "Under UGX 200K",
           "type": "COLLECTION",
-          "url": "/collections/clothing?price=Under%20UGX%20200K&sort=price-asc",
+          "url": "/collections/under-ugx-200k?sort=price-asc",
           "items": []
         }
       ]
