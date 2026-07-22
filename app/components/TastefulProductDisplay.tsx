@@ -69,12 +69,12 @@ export const TastefulProductDisplay = ({
                 </h3>
                 <div className="flex items-center gap-2">
                   <div className="font-bold text-xs md:text-sm">
-                    KES {parseFloat(product.price).toLocaleString()}
+                    UGX {parseFloat(product.price).toLocaleString()}
                   </div>
                   {product.compareAtPrice &&
                     product.compareAtPrice > 0 && (
                       <span className="text-xs text-red-500 line-through">
-                        KES{' '}
+                        UGX{' '}
                         {parseFloat(product.compareAtPrice).toLocaleString()}
                       </span>
                     )}

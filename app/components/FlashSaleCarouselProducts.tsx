@@ -179,7 +179,7 @@
 //                       </div>
 //                       <div className="flex items-baseline gap-2">
 //                         <span className="text-lg font-bold text-gray-600">
-//                           KES {parseFloat(product.price).toLocaleString()}
+//                           UGX {parseFloat(product.price).toLocaleString()}
 //                         </span>
 //                         <span className="text-sm text-muted-foreground line-through"></span>
 //                       </div>
@@ -439,13 +439,13 @@ export const FlashSaleProductsCarousel = ({products, className}: any) => {
                       </h3>
                       <div className="flex gap-2">
                         <div className="font-bold text-xs">
-                          KES {parseFloat(product.price).toLocaleString()}
+                          UGX {parseFloat(product.price).toLocaleString()}
                         </div>
                         <p>
                           {product.compareAtPrice &&
                             product.compareAtPrice > 0 && (
                               <span className="text-xs text-red-500 line-through">
-                                KES
+                                UGX
                                 {parseFloat(
                                   product.compareAtPrice,
                                 ).toLocaleString()}

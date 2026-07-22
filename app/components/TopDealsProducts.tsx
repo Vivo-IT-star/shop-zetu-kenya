@@ -178,12 +178,12 @@ export const TopDealsProductsCarousel = ({products, className}: any) => {
                               </h3>
                               <div className="flex gap-2">
                                 <div className="font-bold text-xs">
-                                  KES {parseFloat(product.price).toLocaleString()}
+                                  UGX {parseFloat(product.price).toLocaleString()}
                                 </div>
                                 <p>
                                   {product.compareAtPrice && product.compareAtPrice > 0 && (
                                     <span className="text-xs text-red-500 line-through">
-                                      KES
+                                      UGX
                                       {parseFloat(
                                         product.compareAtPrice,
                                       ).toLocaleString()}

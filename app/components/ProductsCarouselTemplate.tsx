@@ -156,7 +156,7 @@ export const ProductsCarouselTemplate = ({products, className}: any) => {
                         {product.title}
                       </h3>
                       <p className=" font-bold text-base">
-                        KES {parseFloat(product.price).toLocaleString()}
+                        UGX {parseFloat(product.price).toLocaleString()}
                       </p>
                     </div>
                   </Link>

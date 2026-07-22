@@ -35,10 +35,10 @@ export function Header({
         {/* Left: Logo */}
         <NavLink to="/" prefetch="intent" className="cursor-pointer shrink-0">
           <Image
-            src="https://cdn.shopify.com/s/files/1/0621/5162/2875/files/logo.webp?v=1749638290"
-            sizes="(min-width: 1024px) 180px, (min-width: 640px) 60px, 90px"
-            alt="Logo"
-            className="h-11 -mt-1 lg:h-18 w-auto border border-white"
+            src="https://cdn.shopify.com/s/files/1/0533/4797/5326/files/vivo-logo.webp"
+            sizes="(min-width: 1024px) 180px, (min-width: 640px) 120px, 110px"
+            alt="Vivo Fashion Group"
+            className="h-11 -mt-1 lg:h-16 w-auto"
           />
         </NavLink>
 
