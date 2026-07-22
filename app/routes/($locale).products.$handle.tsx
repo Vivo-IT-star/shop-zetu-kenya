@@ -22,7 +22,7 @@ import MissFitButton from '~/components/MissFitButton';
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
   return [
-    { title: `Shopzetu | ${data?.product.title ?? ''}` },
+    { title: `Vivo Fashion Group | ${data?.product.title ?? ''}` },
     {
       rel: 'canonical',
       href: `/products/${data?.product.handle}`,

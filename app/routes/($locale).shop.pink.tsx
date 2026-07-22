@@ -471,7 +471,7 @@ const ShopPink = () => {
               awareness, strength, and sisterhood.
               <br />
               <br />
-              At Shop Zetu, we’re painting the month rosy with more than just
+              At Vivo Fashion Group, we’re painting the month rosy with more than just
               pretty pieces. Our Pink Collection celebrates women — their
               courage, their confidence, and their stories. Every time you shop
               this edit, you’re joining a bigger conversation: one that says

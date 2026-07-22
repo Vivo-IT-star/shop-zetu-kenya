@@ -43,7 +43,7 @@ type CollectionProductNode = {
 };
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Shopzetu | ${data?.collection.title ?? ''} Collection`}];
+  return [{title: `Vivo Fashion Group | ${data?.collection.title ?? ''} Collection`}];
 };
 
 export async function loader(args: LoaderFunctionArgs) {

@@ -13,7 +13,7 @@ import {
 } from '~/lib/search';
 import { IoSearch } from "react-icons/io5";
 export const meta: MetaFunction = () => {
-  return [{title: `Shopzetu | Search`}];
+  return [{title: `Vivo Fashion Group | Search`}];
 };
 
 export async function loader({request, context}: LoaderFunctionArgs) {

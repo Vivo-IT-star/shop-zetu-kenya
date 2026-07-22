@@ -27,11 +27,6 @@ const Footer: React.FC = () => {
                                 Zetu Studios
                             </Link>
                         </li>
-                        <li className="hover:text-white cursor-pointer">
-                            <Link to="/pages/blogs/news" className="!text-white">
-                                Blogs
-                            </Link>
-                        </li>
                     </ul>
                 </div>
 

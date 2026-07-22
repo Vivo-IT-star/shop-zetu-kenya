@@ -6,7 +6,7 @@ import {PaginatedResourceSection} from '~/components/PaginatedResourceSection';
 import {redirectIfHandleIsLocalized} from '~/lib/redirect';
 
 export const meta: MetaFunction<typeof loader> = ({data}) => {
-  return [{title: `Shopzetu | ${data?.blog.title ?? ''} blog`}];
+  return [{title: `Vivo Fashion Group | ${data?.blog.title ?? ''} blog`}];
 };
 
 export async function loader(args: LoaderFunctionArgs) {

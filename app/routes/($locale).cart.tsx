@@ -11,7 +11,7 @@ import {CartMain} from '~/components/CartMain';
 import { useAnalytics } from '~/hooks/useAnalytics';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Shopzetu | Cart`}];
+  return [{title: `Vivo Fashion Group | Cart`}];
 };
 
 export const headers: HeadersFunction = ({actionHeaders}) => actionHeaders;

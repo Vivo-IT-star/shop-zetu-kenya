@@ -8,7 +8,7 @@ import MusicPlayer from './MusicPlayer';
 const items = [
   {
     title: 'RETURN, REFUND & EXCHANGE POLICY',
-    link: 'Shopzetu Return Process',
+    link: 'Vivo Fashion Group Return Process',
     href: '/pages/return-policy',
     text: '!text-white text-sm',
   },

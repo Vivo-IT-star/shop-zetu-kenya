@@ -4,7 +4,7 @@ import {getPaginationVariables} from '@shopify/hydrogen';
 import {PaginatedResourceSection} from '~/components/PaginatedResourceSection';
 
 export const meta: MetaFunction = () => {
-  return [{title: `Shopzetu | Blogs`}];
+  return [{title: `Vivo Fashion Group | Blogs`}];
 };
 
 export async function loader(args: LoaderFunctionArgs) {

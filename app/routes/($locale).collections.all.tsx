@@ -5,7 +5,7 @@ import {PaginatedResourceSection} from '~/components/PaginatedResourceSection';
 import {ProductItem} from '~/components/ProductItem';
 
 export const meta: MetaFunction<typeof loader> = () => {
-  return [{title: `Shopzetu | Products`}];
+  return [{title: `Vivo Fashion Group | Products`}];
 };
 
 export async function loader(args: LoaderFunctionArgs) {

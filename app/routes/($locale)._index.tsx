@@ -108,7 +108,7 @@ const testimonials = [
 ];
 
 export const meta: MetaFunction = () => {
-  return [{title: 'Shopzetu | Home'}];
+  return [{title: 'Vivo Fashion Group | Home'}];
 };
 
 export async function loader(args: LoaderFunctionArgs) {
